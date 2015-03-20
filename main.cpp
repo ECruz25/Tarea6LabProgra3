@@ -56,9 +56,19 @@ void loopJuego()
             }
         }
 
-        if(frame%1000==0)
+        if(frame%10000==0)
         {
             Personaje *p = new EnemigoAzul(renderer,&personajes);
+            personajes.push_back(p);
+        }
+        if(frame%1000==0)
+        {
+            Personaje *p = new EnemigoRojo(renderer,&personajes);
+            personajes.push_back(p);
+        }
+        if(frame%100000==0)
+        {
+            Personaje *p = new EnemigoVerde(renderer,&personajes);
             personajes.push_back(p);
         }
 

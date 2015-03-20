@@ -2,6 +2,7 @@
 #define SHO_H
 
 #include "Personaje.h"
+#include <fstream>
 
 class Sho : public Personaje
 {
